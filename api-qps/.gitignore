@@ -1,0 +1,17 @@
+bin/
+target/
+*/build
+*/out
+*\.project
+*\.classpath
+*\.settings/
+\.settings/
+node_modules/
+test-output/
+.idea/
+.gradle/
+*.iml
+*.ipr
+*.iws
+*\.pydevproject
+
