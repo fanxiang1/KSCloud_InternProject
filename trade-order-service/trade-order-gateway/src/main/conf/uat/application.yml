@@ -1,0 +1,18 @@
+info:
+  app:
+    name: trade-order-gateway-fanxiang
+    env: uat
+    ver: v0.0.1
+
+server:
+  port: 8088
+
+spring:
+  redis:
+    host: campus-test.redis.ksyun.com
+    port: 8379
+    password: Console2016
+    database: 3
+
+actions: http://campus-test.query1.ksyun.com:8089,http://campus-test.query2.ksyun.com:8089
+meta: http://campus.meta.ksyun.com:8090

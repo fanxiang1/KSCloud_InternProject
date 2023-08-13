@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ksyun.trade.dao.TradeProductConfigMapper">
+
+    <resultMap type="com.ksyun.trade.dao.dataobject.TradeProductConfig" id="TradeProductConfigMap">
+        <result property="id" column="id" jdbcType="INTEGER"/>
+        <result property="itemNo" column="item_no" jdbcType="VARCHAR"/>
+        <result property="itemName" column="item_name" jdbcType="VARCHAR"/>
+        <result property="unit" column="unit" jdbcType="VARCHAR"/>
+        <result property="value" column="value" jdbcType="INTEGER"/>
+        <result property="orderId" column="order_id" jdbcType="INTEGER"/>
+    </resultMap>
+
+    <!--查询单个-->
+    <select id="queryByOrderId" resultMap="TradeProductConfigMap">
+
+    </select>
+
+
+</mapper>
+

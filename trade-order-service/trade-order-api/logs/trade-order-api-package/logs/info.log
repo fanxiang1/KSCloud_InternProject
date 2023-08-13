@@ -1,0 +1,82 @@
+2023-07-24 23:52:49.018 |  INFO | ApiApplication | main |  | Starting ApiApplication v0.0.1-SNAPSHOT on lulu.local with PID 40465 (/Users/yuanzilvdong/Desktop/gitlab_repository/trade-order-service/trade-order-api/target/trade-order-api-package/lib/trade-order-api-0.0.1-SNAPSHOT.jar started by yuanzilvdong in /Users/yuanzilvdong/Desktop/gitlab_repository/trade-order-service/trade-order-api/target/trade-order-api-package)
+2023-07-24 23:52:49.021 |  INFO | ApiApplication | main |  | No active profile set, falling back to default profiles: default
+2023-07-24 23:52:50.958 |  INFO | RepositoryConfigurationDelegate | main |  | Multiple Spring Data modules found, entering strict repository configuration mode!
+2023-07-24 23:52:50.961 |  INFO | RepositoryConfigurationDelegate | main |  | Bootstrapping Spring Data repositories in DEFAULT mode.
+2023-07-24 23:52:51.008 |  INFO | RepositoryConfigurationDelegate | main |  | Finished Spring Data repository scanning in 32ms. Found 0 repository interfaces.
+2023-07-24 23:52:51.823 |  INFO | EnableEncryptablePropertiesBeanFactoryPostProcessor | main |  | Post-processing PropertySource instances
+2023-07-24 23:52:51.825 |  INFO | EncryptablePropertySourceConverter | main |  | Skipping PropertySource configurationProperties [class org.springframework.boot.context.properties.source.ConfigurationPropertySourcesPropertySource
+2023-07-24 23:52:51.826 |  INFO | EncryptablePropertySourceConverter | main |  | Skipping PropertySource servletConfigInitParams [class org.springframework.core.env.PropertySource$StubPropertySource
+2023-07-24 23:52:51.826 |  INFO | EncryptablePropertySourceConverter | main |  | Skipping PropertySource servletContextInitParams [class org.springframework.core.env.PropertySource$StubPropertySource
+2023-07-24 23:52:51.827 |  INFO | EncryptablePropertySourceConverter | main |  | Converting PropertySource systemProperties [org.springframework.core.env.MapPropertySource] to EncryptableMapPropertySourceWrapper
+2023-07-24 23:52:51.828 |  INFO | EncryptablePropertySourceConverter | main |  | Converting PropertySource systemEnvironment [org.springframework.boot.env.SystemEnvironmentPropertySourceEnvironmentPostProcessor$OriginAwareSystemEnvironmentPropertySource] to EncryptableSystemEnvironmentPropertySourceWrapper
+2023-07-24 23:52:51.828 |  INFO | EncryptablePropertySourceConverter | main |  | Converting PropertySource random [org.springframework.boot.env.RandomValuePropertySource] to EncryptablePropertySourceWrapper
+2023-07-24 23:52:51.829 |  INFO | EncryptablePropertySourceConverter | main |  | Converting PropertySource applicationConfig: [classpath:/application.yml] [org.springframework.boot.env.OriginTrackedMapPropertySource] to EncryptableMapPropertySourceWrapper
+2023-07-24 23:52:52.017 |  INFO | PostProcessorRegistrationDelegate$BeanPostProcessorChecker | main |  | Bean 'org.springframework.retry.annotation.RetryConfiguration' of type [org.springframework.retry.annotation.RetryConfiguration$$EnhancerBySpringCGLIB$$3bf7babc] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-07-24 23:52:52.148 |  INFO | PostProcessorRegistrationDelegate$BeanPostProcessorChecker | main |  | Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$46342297] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-07-24 23:52:53.671 |  INFO | TomcatWebServer | main |  | Tomcat initialized with port(s): 8089 (http)
+2023-07-24 23:52:53.701 |  INFO | Http11NioProtocol | main |  | Initializing ProtocolHandler ["http-nio-8089"]
+2023-07-24 23:52:53.725 |  INFO | StandardService | main |  | Starting service [Tomcat]
+2023-07-24 23:52:53.725 |  INFO | StandardEngine | main |  | Starting Servlet engine: [Apache Tomcat/9.0.16]
+2023-07-24 23:52:53.739 |  INFO | AprLifecycleListener | main |  | The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/yuanzilvdong/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+2023-07-24 23:52:53.905 |  INFO | [/] | main |  | Initializing Spring embedded WebApplicationContext
+2023-07-24 23:52:53.905 |  INFO | ContextLoader | main |  | Root WebApplicationContext: initialization completed in 4740 ms
+2023-07-24 23:52:54.044 |  INFO | RegistrationBean | main |  | Filter characterEncodingFilter was not registered (possibly already registered?)
+2023-07-24 23:52:54.159 |  INFO | DefaultLazyPropertyFilter | main |  | Property Filter custom Bean not found with name 'encryptablePropertyFilter'. Initializing Default Property Filter
+2023-07-24 23:52:54.169 |  INFO | DefaultLazyPropertyResolver | main |  | Property Resolver custom Bean not found with name 'encryptablePropertyResolver'. Initializing Default Property Resolver
+2023-07-24 23:52:54.174 |  INFO | DefaultLazyPropertyDetector | main |  | Property Detector custom Bean not found with name 'encryptablePropertyDetector'. Initializing Default Property Detector
+2023-07-24 23:52:57.165 |  INFO | ThreadPoolTaskScheduler | main |  | Initializing ExecutorService 'taskScheduler'
+2023-07-24 23:52:57.192 |  INFO | AppConfig | main |  | appDefaultPoolExecutor init...
+2023-07-24 23:52:59.900 |  INFO | Http11NioProtocol | main |  | Starting ProtocolHandler ["http-nio-8089"]
+2023-07-24 23:52:59.942 | ERROR | LifecycleBase | main |  | Failed to start component [Connector[HTTP/1.1-8089]]
+org.apache.catalina.LifecycleException: Protocol handler start failed
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1008)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.StandardService.addConnector(StandardService.java:226)
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.addPreviouslyRemovedConnectors(TomcatWebServer.java:259)
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start(TomcatWebServer.java:197)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.startWebServer(ServletWebServerApplicationContext.java:311)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.finishRefresh(ServletWebServerApplicationContext.java:164)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:552)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:142)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:775)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248)
+	at com.ksyun.trade.ApiApplication.main(ApiApplication.java:13)
+Caused by: java.net.BindException: Address already in use
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:433)
+	at sun.nio.ch.Net.bind(Net.java:425)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74)
+	at org.apache.tomcat.util.net.NioEndpoint.initServerSocket(NioEndpoint.java:236)
+	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:210)
+	at org.apache.tomcat.util.net.AbstractEndpoint.bindWithCleanup(AbstractEndpoint.java:1085)
+	at org.apache.tomcat.util.net.AbstractEndpoint.start(AbstractEndpoint.java:1171)
+	at org.apache.coyote.AbstractProtocol.start(AbstractProtocol.java:568)
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1005)
+	... 14 common frames omitted
+2023-07-24 23:52:59.965 |  INFO | Http11NioProtocol | main |  | Pausing ProtocolHandler ["http-nio-8089"]
+2023-07-24 23:52:59.965 |  INFO | StandardService | main |  | Stopping service [Tomcat]
+2023-07-24 23:52:59.978 |  INFO | LifecycleBase | main |  | The stop() method was called on component [StandardServer[-1]] after stop() had already been called. The second call will be ignored.
+2023-07-24 23:52:59.981 |  INFO | Http11NioProtocol | main |  | Stopping ProtocolHandler ["http-nio-8089"]
+2023-07-24 23:52:59.981 |  INFO | Http11NioProtocol | main |  | Destroying ProtocolHandler ["http-nio-8089"]
+2023-07-24 23:52:59.999 |  INFO | ConditionEvaluationReportLoggingListener | main |  | 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2023-07-24 23:53:00.008 | ERROR | LoggingFailureAnalysisReporter | main |  | 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The Tomcat connector configured to listen on port 8089 failed to start. The port may already be in use or the connector may be misconfigured.
+
+Action:
+
+Verify the connector's configuration, identify and stop any process that's listening on port 8089, or configure this application to listen on another port.
+
+2023-07-24 23:53:00.021 |  INFO | ThreadPoolTaskScheduler | main |  | Shutting down ExecutorService 'taskScheduler'

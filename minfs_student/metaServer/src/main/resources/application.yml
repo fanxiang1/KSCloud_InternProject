@@ -1,0 +1,20 @@
+application:
+  name: metaServer
+server:
+  port: 8000
+spring:
+  task:
+    execution:
+      pool:
+        core-size: 10
+        max-size: 20
+        queue-capacity: 1000
+#  main:
+#    allow-circular-references: true
+zookeeper:
+  addr: 127.0.0.1:2181
+  sessionTimeOut: 50000
+  sleepMsBetweenRetry: 1000
+  maxRetries: 3
+  namespace: meta
+  connectionTimeoutMs: 50000

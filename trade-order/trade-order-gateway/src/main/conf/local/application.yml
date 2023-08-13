@@ -1,0 +1,18 @@
+info:
+  app:
+    name: trade-order-gateway
+    env: local
+    ver: v0.0.1
+
+server:
+  port: 8088
+
+spring:
+  redis:
+    host: 127.0.0.1
+    port: 6379 # 没设置密码
+    database: 0
+
+
+actions: http://campus.query1.ksyun.com:8089/online/trade_order,http://campus.query2.ksyun.com:8089/online/trade_order
+

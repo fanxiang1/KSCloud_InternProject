@@ -1,0 +1,17 @@
+application:
+  name: dataServer
+  capacity: 1073741824
+server:
+  port: 9000
+az:
+  rack: rack1
+  zone: zone1
+
+zookeeper:
+  addr: 127.0.0.1:2181
+  sessionTimeOut: 50000
+  sleepMsBetweenRetry: 1000
+  maxRetries: 3
+  namespace: data
+  connectionTimeoutMs: 50000
+
